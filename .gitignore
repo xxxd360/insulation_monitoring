@@ -1,0 +1,38 @@
+# --- 1. Python 通用缓存 ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- 2. 虚拟环境 ---
+venv/
+ENV/
+env/
+.venv/
+*.log
+
+# --- 3. IDE 配置---
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.pt
+dataset/
+runs/predict/
