@@ -108,4 +108,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: tracktrack.yaml
-save_dir: D:\Project\insulation_monitoring\runs\detect\yolo11_rgb
+save_dir: D:\Project\insulation_monitoring\runs\detect\yolo11_rgb-2

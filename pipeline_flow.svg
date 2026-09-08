@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+  <title id="title">便携式高压绝缘视觉监测全流程</title>
+  <desc id="desc">从 RGB 和红外数据输入开始，经 DenseFuse 图像融合、一级绝缘子检测、二级缺陷检测和四级风险评估，最后输出可追溯的图像与 JSON 记录。</desc>
+  <defs>
+    <linearGradient id="header" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#123b5d"/><stop offset="1" stop-color="#176b87"/></linearGradient>
+    <linearGradient id="input" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#e8f3fb"/><stop offset="1" stop-color="#d9edf5"/></linearGradient>
+    <linearGradient id="fusion" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#edf0ff"/><stop offset="1" stop-color="#e1e6fb"/></linearGradient>
+    <linearGradient id="detect" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#eaf8f1"/><stop offset="1" stop-color="#d8f1e7"/></linearGradient>
+    <linearGradient id="risk" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fff4df"/><stop offset="1" stop-color="#ffe8bd"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#0e2c3d" flood-opacity="0.14"/></filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto"><path d="M0,0 L0,8 L11,4 z" fill="#527286"/></marker>
+    <style>
+      .font{font-family:Arial,'Microsoft YaHei','Noto Sans CJK SC',sans-serif}.header{font-size:30px;font-weight:700;fill:#fff;letter-spacing:1px}.subtitle{font-size:15px;fill:#d7edf4}.phase{font-size:14px;font-weight:700;fill:#4f7485;letter-spacing:1px}.card-title{font-size:22px;font-weight:700;fill:#143447}.body{font-size:16px;fill:#2f4b59}.small{font-size:14px;fill:#627b87}.num{font-size:17px;font-weight:700;fill:#fff}.card{stroke-width:2;rx:20;filter:url(#shadow)}.arrow{stroke:#527286;stroke-width:3;fill:none;marker-end:url(#arrow)}.dash{stroke:#91aab6;stroke-width:2;stroke-dasharray:8 8;fill:none}
+    </style>
+  </defs>
+  <rect width="1600" height="760" fill="#f7fafc"/>
+  <rect x="0" y="0" width="1600" height="112" fill="url(#header)"/>
+  <text x="800" y="51" text-anchor="middle" class="font header">便携式高压绝缘视觉监测全流程</text>
+  <text x="800" y="82" text-anchor="middle" class="font subtitle">多模态采集 · 两级检测 · 风险辅助评估 · 可追溯输出</text>
+  <text x="90" y="155" class="font phase">01  数据准备</text><text x="410" y="155" class="font phase">02  融合增强</text><text x="735" y="155" class="font phase">03  目标定位</text><text x="1060" y="155" class="font phase">04  缺陷分析</text><text x="1385" y="155" class="font phase">05  风险输出</text>
+
+  <rect x="48" y="185" width="250" height="250" fill="url(#input)" class="card"/><circle cx="82" cy="220" r="22" fill="#277da1"/><text x="82" y="226" text-anchor="middle" class="font num">1</text><text x="116" y="228" class="font card-title">数据输入</text><path d="M78 270 H268" class="dash"/><text x="78" y="305" class="font body">RGB 可见光图像</text><text x="78" y="342" class="font body">红外图像</text><text x="78" y="379" class="font body">设备编号 / 时间 / 视角</text><text x="78" y="414" class="font small">建立可复核的样本配对关系</text>
+  <path d="M298 310 H355" class="arrow"/>
+  <rect x="355" y="185" width="250" height="250" fill="url(#fusion)" class="card"/><circle cx="389" cy="220" r="22" fill="#5d63b8"/><text x="389" y="226" text-anchor="middle" class="font num">2</text><text x="423" y="228" class="font card-title">图像融合</text><path d="M385 270 H575" class="dash"/><text x="385" y="305" class="font body">尺寸统一与归一化</text><text x="385" y="342" class="font body">DenseFuse 特征融合</text><text x="385" y="379" class="font body">输出融合图像</text><text x="385" y="414" class="font small">当前推理输出为单通道融合结果</text>
+  <path d="M605 310 H662" class="arrow"/>
+  <rect x="662" y="185" width="250" height="250" fill="url(#detect)" class="card"/><circle cx="696" cy="220" r="22" fill="#2a9d75"/><text x="696" y="226" text-anchor="middle" class="font num">3</text><text x="730" y="228" class="font card-title">一级检测</text><path d="M692 270 H882" class="dash"/><text x="692" y="305" class="font body">YOLO 定位绝缘子</text><text x="692" y="342" class="font body">输出 bbox 与置信度</text><text x="692" y="379" class="font body">保留原图坐标</text><text x="692" y="414" class="font small">为局部缺陷分析确定候选区域</text>
+  <path d="M912 310 H969" class="arrow"/>
+  <rect x="969" y="185" width="250" height="250" fill="url(#detect)" class="card"/><circle cx="1003" cy="220" r="22" fill="#218c69"/><text x="1003" y="226" text-anchor="middle" class="font num">4</text><text x="1037" y="228" class="font card-title">二级检测</text><path d="M999 270 H1189" class="dash"/><text x="999" y="305" class="font body">裁剪绝缘子区域</text><text x="999" y="342" class="font body">YOLO 检测缺陷类别</text><text x="999" y="379" class="font body">计算缺陷面积与比例</text><text x="999" y="414" class="font small">支持污秽、缺陷、剥落等类别</text>
+  <path d="M1219 310 H1276" class="arrow"/>
+  <rect x="1276" y="185" width="276" height="250" fill="url(#risk)" class="card"/><circle cx="1310" cy="220" r="22" fill="#e69a2c"/><text x="1310" y="226" text-anchor="middle" class="font num">5</text><text x="1344" y="228" class="font card-title">风险评估</text><path d="M1306 270 H1520" class="dash"/><text x="1306" y="305" class="font body">类别 + 面积比例</text><text x="1306" y="342" class="font body">正常 / 关注 / 预警</text><text x="1306" y="379" class="font body">高风险 / 拒判</text><text x="1306" y="414" class="font small">规则需用实测数据继续标定</text>
+
+  <path d="M1414 435 V505" class="arrow"/>
+  <rect x="430" y="505" width="740" height="165" fill="#fff" stroke="#c8d8df" stroke-width="2" rx="22" filter="url(#shadow)"/><text x="800" y="548" text-anchor="middle" class="font card-title">可追溯结果管理</text><path d="M485 570 H1115" class="dash"/><text x="800" y="607" text-anchor="middle" class="font body">融合图像 · 一级检测图 · 绝缘子裁剪图 · 二级检测图</text><text x="800" y="638" text-anchor="middle" class="font body">逐图 JSON 记录 · summary.json 汇总 · 人工复核接口</text>
+  <text x="800" y="718" text-anchor="middle" class="font small">正式运行前：建立 RGB/IR 配对清单，并分别训练一级绝缘子模型与二级缺陷模型</text>
+</svg>

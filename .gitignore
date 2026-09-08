@@ -32,6 +32,8 @@ env/
 *.iml
 *.ipr
 *.iws
+*.docx
+*.pdf
 .vscode/
 *.pt
 *.pth

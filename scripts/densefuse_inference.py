@@ -74,7 +74,9 @@ def main():
         fused_img = transforms.ToPILImage()(fused)
         fused_img = fused_img.resize(original_size, Image.BILINEAR)
 
-        save_path = OUT_DIR / f"{idx:04d}_fusion.png"
+        # Keep the original stem so LabelMe annotations and later two-stage
+        # dataset generation can match fused images back to their source.
+        save_path = OUT_DIR / f"{rgb_path.stem}_fusion.png"
         fused_img.save(save_path)
         print(f"[{idx}/{len(rgb_paths)}] saved: {save_path.name}")
 
